@@ -1,0 +1,19 @@
+export PATH="$HOME/dohop/dohop-dev-tools/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/redis/bin:$PATH"
+export PATH="/opt/homebrew/opt/java/bin:$PATH"
+
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
+export PYTHONPATH="~/dohop/libdohop"
+export SSL_CERT_FILE=$(dh-python -m certifi)
+
+
+source dh-venv
+
+alias ga="git add"
+alias gs="git status"
+alias gc="git commit"
+alias gch="git checkout"
+alias ll="ls -la"
