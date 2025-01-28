@@ -12,8 +12,16 @@ export SSL_CERT_FILE=$(dh-python -m certifi)
 
 source dh-venv
 
+# Git aliases
 alias ga="git add"
 alias gs="git status"
 alias gc="git commit"
 alias gch="git checkout"
+
+
+# Tmux aliases
+alias tm="tmux new -A -s"
+
+
+# Other aliases
 alias ll="ls -la"
