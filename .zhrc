@@ -24,8 +24,10 @@ alias tml="tmux ls"
 alias ll="ls -la"
 alias cat="bat"
 alias gri="grep -Ri"
-alias vi="nvim"
+alias pip="pip3"
 
 # Dohop dev aliases
 alias nobs2="dh-python3 -m server.local_dev -s bs2"
 alias watchbs2="watchexec -w ../robots -r -e py -- dh-python3 -m server.local_dev --run-only bs2"
+alias vi="nvim"
+alias denv="source dh-venv"
