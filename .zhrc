@@ -19,6 +19,7 @@ alias gb="git branch"
 # Tmux aliases
 alias tm="tmux new -A -s"
 alias tml="tmux ls"
+alias ta="tmux attach"
 
 # Other aliases
 alias ll="ls -la"
@@ -31,3 +32,4 @@ alias nobs2="dh-python3 -m server.local_dev -s bs2"
 alias watchbs2="watchexec -w ../robots -r -e py -- dh-python3 -m server.local_dev --run-only bs2"
 alias vi="nvim"
 alias denv="source dh-venv"
+alias replay="dh-python -m libdohop.agents.restricted_recordings replay -k"
