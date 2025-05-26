@@ -6,7 +6,7 @@ export PATH="/opt/homebrew/opt/java/bin:$PATH"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
-export PYTHONPATH="~/dohop/libdohop"
+export PYTHONPATH="$HOME/dohop/libdohop"
 
 # Git aliases
 alias ga="git add"
