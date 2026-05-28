@@ -18,14 +18,14 @@ alias gb="git branch"
 
 # Tmux aliases
 alias tm="tmux new -A -s"
-alias tml="tmux ls"
+alias tl="tmux ls"
 alias ta="tmux attach"
+alias tk="tmux kill-session -t"
 
 # Other aliases
 alias ll="ls -la"
-alias cat="bat"
-alias gri="grep -Ri"
 alias pip="pip3"
+alias aws-login="dh-aws login"
 
 # Dohop dev aliases
 alias nobs2="dh-python3 -m server.local_dev -s bs2"
@@ -33,3 +33,24 @@ alias watchbs2="watchexec -w ../robots -r -e py -- dh-python3 -m server.local_de
 alias vi="nvim"
 alias denv="source dh-venv"
 alias replay="dh-python -m libdohop.agents.restricted_recordings replay -k"
+
+# Airflow
+export AIRFLOW__CORE__DAGS_FOLDER=/Users/adampostek/dohop/data-team-tools/dags
+export AIRFLOW__CORE__LOAD_EXAMPLES=False
+export AIRFLOW__CORE__DAG_RUN_CONF_OVERRIDES_PARAMS=True
+export AIRFLOW_CONN_DNA_LAKE='google-cloud-platform://?project=dna-lake'
+export GOOGLE_CLOUD_PROJECT=dna-lake
+
+alias gpe="gh pr edit"
+alias gpl="gh pr list"
+alias gps="gh pr status -c"
+alias gpd="gh pr diff"
+alias gpa="gh pr review -a"
+alias gpv="gh pr view"
+alias gpc="gh pr create"
+alias gpm="gh pr merge --squash --delete-branch && git fetch -p"
+alias gpma="gh pr merge --admin --squash --delete-branch && git fetch -p"
+alias gpr="gh pr ready"
+
+alias grl="gh run list"
+alias grw="gh run watch"
